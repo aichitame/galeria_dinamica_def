@@ -1,99 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PcComponentes Estilo Web</title>
+  <meta name="description" content="Tienda online de tecnología e informática." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style1.css"/>
 </head>
-
 <body>
   <header class="header">
     <section class="top-bar">
-      <img src="Logo_oficial.png" alt="Logo" class="logo">
-      <select>
-        <option>Todas las categorías</option>
-      </select>
-    <input type="text" placeholder="Buscar" class="search">
-    <div class="header-right">
-      <button class="cuenta">Mi cuenta</button>
-      <button class="carrito">Mi cesta</button>
-    </div>
+      <img src="Logo_oficial.png" alt="PcComponentes - Logo" class="logo" />
+      <form class="search-form" action="/buscar" role="search">
+        <label for="categoria" class="sr-only">Categoría</label>
+        <select id="categoria" name="categoria" aria-label="Categoría">
+          <option value="">Todas las categorías</option>
+        </select>
+
+        <label for="q" class="sr-only">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Buscar" class="search" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div class="header-right">
+        <a class="cuenta" href="https://www.pccomponentes.com/login">Mi cuenta</a>
+        <a class="carrito" href="/cesta" aria-label="Mi cesta">Mi cesta</a>
+      </div>
+    </section>
   </header>
-</section>
 
-<section class="navegacion">
-  <nav class="links">
-  <li><a href="https://www.pccomponentes.com/ofertas-especiales-apple-week">Apple week -35%</a></li>
-  <li><a href="https://www.pccomponentes.com/ofertas-especiales-ventilacion-y-clima">Ventilación y clima</a></li>
-  <li><a href="https://www.pccomponentes.com/empresas-y-profesionales">Empresas y profesionales</a></li>
-  <li><a href="https://www.pccomponentes.com/tarjetas-regalo">Tarjetas regalo</a></li>
+  <nav class="links" aria-label="Enlaces destacados">
+    <ul>
+      <li><a href="https://www.pccomponentes.com/espacio-iphone">Espacio Apple</a></li>
+      <li><a href="https://www.pccomponentes.com/ventilacion-y-clima">Ventilación y clima</a></li>
+      <li><a href="https://www.pccomponentes.com/empresas-y-profesionales">Empresas y profesionales</a></li>
+      <li><a href="https://www.pccomponentes.com/tarjetas-regalo">Tarjetas regalo</a></li>
+    </ul>
   </nav>
-  <nav class="nav2">
-    <h3><a href="https://www.pccomponentes.com/afiliados">¡Hazte miembro y no te pierdas nada!</a></h3>
+
+  <nav class="nav2" aria-label="Programa de afiliados">
+    <h3><a href="https://www.pccomponentes.com/afiliados">Hazte miembro y no te pierdas nada</a></h3>
   </nav>
-</section>
 
-  <section class="productos">
-  </section>
+  <main id="contenido">
+    <section class="productos" aria-live="polite">
+      <!-- Cards de producto generadas por JS -->
+    </section>
 
-  <!-- Banners
-  <section class="banners">
-    <div class="banner1">
-        <a href="https://www.pccomponentes.com/ofertas-especiales"><img src="Banners/primera_foto_banner.webp" alt="primera_foto_banner"></a>
-      <p>Hasta un <strong>-40%</strong> de descuento</p>
+    <div class="prefooter">
+      <a href="https://www.pccomponentes.com/reacondicionados">
+        <img src="Footer/cfeecc21-65c5-4a02-b037-9d6133a2540b-UPGRADERS-1560.png" alt="Publicidad MacBook reacondicionado" />
+      </a>
+      <a href="https://www.pccomponentes.com/reacondicionados">
+        <img src="Footer/dfp-pccomponentes-replay-default-1560x160.webp" alt="Garantía de ahorro" />
+      </a>
     </div>
-    <div class="banner2">
-        <a href="https://www.pccomponentes.com/ofertas-especiales-apple-week"><img src="Banners/segunda_foto_banner.webp" alt="segunda_foto_banner"></a>
-      <p>Hasta un <strong>-35%</strong> de descuento</p>
-      <small>Solo disponible hasta el 22 de junio</small>
-    </div>
-    <div class="banner3">
-      <a href="https://www.pccomponentes.com/ofertas-especiales-ventilacion-y-clima"><img src="Banners/tercera_foto_banner.webp" alt="tercera_foto_header"></a>
-      <p>Hasta un <strong>-40%</strong> de descuento</p>
-    </div>
-  </section>
-  
-  <div class="nav3">
-    <h2>¡Consigue las ofertas más TOP del momento!</h2>
-  </div>
-  -->
 
-<!-- FOOTER -->
-  <div class="prefooter">
-    <a href="https://www.pccomponentes.com/reacondicionados"><img src="Footer/cfeecc21-65c5-4a02-b037-9d6133a2540b-UPGRADERS-1560.png" alt="Publicidad Macbook"></a>
-    <a href="https://www.pccomponentes.com/reacondicionados"><img src="Footer/dfp-pccomponentes-replay-default-1560x160.webp" alt="Garantía ahorro"></a>
-  </div>
-
-  <section class="texto-pre-footer">
-    <h2>PcComponentes es tu tienda online de tecnología e informática.</h2>
-      <h2>Somos la tienda online líder en tecnología, basada en la confianza, la experiencia de compra y el conocimiento del sector tecnológico. 
-      Desde 2005 somos expertos en informática y electrónica. Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad más tecnológica siendo el cliente nuestra razón de ser, superando siempre sus expectativas.</h2>
-      
-      <h3>Actualmente contamos con más de <strong>100.000 artículos disponibles</strong> y 31.700 m2 repartidos entre todas nuestras instalaciones, además de cuatro tiendas físicas en <strong>Madrid, Barcelona, Murcia y Alhama de Murcia.</strong>
-    
-      <li>Envíos gratuitos a partir de 50€ siempre en 24 horas* (si excepcionalmente incumplimos la fecha de entrega, te devolvemos los gastos de envío).</li>
-      <li>Garantía con la mejor solución para ti en 24h.</li>
-      <li>Devoluciones gratuitas.</li>
-      <li>Atención al cliente local y sin esperas.</li>
-      Nos tomamos muy en serio las opiniones de nuestros clientes, y puedes verlas siempre en nuestros artículos.
-      Bienvenido a PcComponentes.</h3>
-  </section>
-  <class="enlaces-contacto">
-    <nav class="nav3">
-      <li><a href="https://help.pccomponentes.com/hc/es-es">Preguntas frecuentes</a></li>
-      <li><a href="https://www.pccomponentes.com/quienes-somos">Quiénes somos</a></li>
-      <li><a href="https://help.pccomponentes.com/hc/es-es">Contacto y ayuda</a></li>
-      <li><a href="https://jobs.pccomponentes.com/#jobs">Trabaja con nosotros</a></li>
-    </nav>
+    <section class="texto-pre-footer">
+      <h2>PcComponentes es tu tienda online de tecnología e informática</h2>
+      <p>Somos la tienda online líder en tecnología, basada en la confianza, la experiencia de compra y el conocimiento del sector tecnológico. Desde 2005 somos expertos en informática y electrónica. Buscamos innovar, descubrir y responder a las últimas necesidades de la comunidad más tecnológica, siendo el cliente nuestra razón de ser y superando siempre sus expectativas.</p>
+      <p>Actualmente contamos con más de <strong>100.000 artículos disponibles</strong> y 31.700 m² repartidos entre todas nuestras instalaciones, además de cuatro tiendas físicas en <strong>Madrid, Barcelona, Murcia y Alhama de Murcia</strong>.</p>
+      <ul>
+        <li>Envíos gratuitos a partir de 50€ en 24 horas* (si incumplimos la fecha de entrega, devolvemos los gastos de envío).</li>
+        <li>Garantía con la mejor solución para ti en 24h.</li>
+        <li>Devoluciones gratuitas.</li>
+        <li>Atención al cliente local y sin esperas.</li>
+      </ul>
+      <p>Nos tomamos muy en serio las opiniones de nuestros clientes; puedes verlas siempre en nuestros artículos. Bienvenido a PcComponentes.</p>
+    </section>
   </main>
-  <script src="/main.js"></script>
-</body>
-    <footer>
-    <small>PC Componentes y Multimedia SLU CIF B73347494. AVDA Europa, Parcela 2-5 y 2-6. Polígono industrial Las Salinas, 30840, Alhama de Murcia, Murcia. ESPAÑA.
+    <footer class="enlaces-contacto">
+      <nav class="nav3" aria-label="Información corporativa">
+        <ul>
+          <li><a href="https://help.pccomponentes.com/hc/es-es">Preguntas frecuentes</a></li>
+          <li><a href="https://www.pccomponentes.com/quienes-somos">Quiénes somos</a></li>
+          <li><a href="https://help.pccomponentes.com/hc/es-es">Contacto y ayuda</a></li>
+          <li><a href="https://jobs.pccomponentes.com/#jobs">Trabaja con nosotros</a></li>
+        </ul>
+      </nav>
+
+    <small>
+      PC Componentes y Multimedia SLU — CIF B73347494. AVDA Europa, Parcela 2-5 y 2-6, Polígono industrial Las Salinas, 30840 Alhama de Murcia, Murcia, España.
     </small>
   </footer>
+  <script src="./main.js" defer></script>
+</body>
 </html>
+
